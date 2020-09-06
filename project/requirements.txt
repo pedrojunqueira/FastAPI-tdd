@@ -9,3 +9,5 @@ uvloop==0.14.0
 websockets==8.1
 asyncpg==0.20.1
 tortoise-orm==0.16.12
+pytest==5.4.2
+requests==2.23.0

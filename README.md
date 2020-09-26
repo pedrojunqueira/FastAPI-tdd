@@ -101,3 +101,5 @@ server: uvicorn
     }
 ]
 ```
+
+currently app is deployed at [Heroku](https://www.heroku.com/home) on https://fastapi-pedro.herokuapp.com/docs

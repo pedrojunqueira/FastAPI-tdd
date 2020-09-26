@@ -7,3 +7,6 @@ run tests on containers
 docker-compose exec web python -m pytest
 
 
+docker-compose exec web-db psql -U postgres
+
+docker-compose exec web python app/db.py

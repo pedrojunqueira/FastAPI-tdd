@@ -42,4 +42,19 @@ $ docker-compose exec web python -m pytest -l
 # list the 2 slowest tests
 $ docker-compose exec web python -m pytest --durations=2
 
+####### test coverage
+
+docker-compose exec web python -m pytest --cov="."
+
+#### Quality
+
+docker-compose exec web flake8 .
+
+docker-compose up -d --build
+docker-compose exec web black . --check
+
+docker-compose exec web /bin/sh -c "isort ./**/*.py --check-only"
+docker-compose exec web /bin/sh -c "isort ./**/*.py --diff"
+
+
 

@@ -8,8 +8,15 @@ This application is just a simple application that demonstrates the functionalit
 
 ## Usage
 
+### Start
+
 ```bash
 docker-compose up -d --build
+```
+### Stop
+
+```bash
+docker-compose down
 ```
 
 Application will be running on http://0.0.0.0:8002/ping

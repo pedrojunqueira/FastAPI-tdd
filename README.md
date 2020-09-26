@@ -1,4 +1,4 @@
-# FastAPI application from testdriven.io tutorual course
+# FastAPI application from testdriven.io tutorial course
 
 FastAPI makes API development fast, fun and performing
 

@@ -57,4 +57,7 @@ docker-compose exec web /bin/sh -c "isort ./**/*.py --check-only"
 docker-compose exec web /bin/sh -c "isort ./**/*.py --diff"
 
 
+docker build -f project/Dockerfile.prod -t docker.pkg.github.com/pedrojunqueira/fastapi-tdd/web:latest ./project
+
+docker login docker.pkg.github.com -u <USERNAME> -p <TOKEN>
 

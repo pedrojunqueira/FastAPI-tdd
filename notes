@@ -61,4 +61,8 @@ docker build -f project/Dockerfile.prod -t docker.pkg.github.com/pedrojunqueira/
 
 docker login docker.pkg.github.com -u <USERNAME> -p <TOKEN
 
+########### parallel testing
+
+docker-compose exec web pytest -k "unit" -n auto
+
 
